@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bearman.firestore_playground">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,6 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Firestore_playground">
+
+        <activity
+            android:name=".AllUserActivity"
+            android:exported="false"
+            android:label="@string/title_activity_all_user"
+            android:theme="@style/Theme.Firestore_playground.NoActionBar" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
